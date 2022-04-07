@@ -1,0 +1,40 @@
+version: '3.8'
+networks:
+  cms_networks:
+    name: cms_networks
+
+services:
+    database:
+      image: mysql:5.7.24
+      container_name: database
+      ports:
+        - "3307:3306"
+      networks: 
+        - cms_networks
+      environment:
+        - MYSQL_ROOT_PASSWORD=admin
+      volumes:
+        - ./docs:/var/lib/mysql
+    api:
+      image: api-node:1.0
+      container_name: api
+      ports:
+        - "3000:3000"
+      networks: 
+        - cms_networks
+    web:
+      image: app-phalcon:1.0
+      container_name: frontend
+      restart: always
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports:
+        - "8082:80"
+      volumes:
+        - ./app:/app/app
+      depends_on:
+        - database
+        - api
+      networks: 
+        - cms_networks

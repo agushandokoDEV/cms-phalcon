@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://panel.mycms.apps/sitemap.xml

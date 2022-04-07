@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" media="screen" href="chosen.css">
+		<style>
+			#states-select, #states-multi-select { width: 150px; }
+		</style>
+	</head>
+	<body>
+		<a href="https://github.com/ksykulev/chosen-ajax-addition"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+		<p>Type one of the 50 states to begin</p>
+		<h2>Single Select</h2>
+		<select id="states-select" name="states-select">
+			<option value=""></option>
+		</select>
+		<h2>Multi Select</h2>
+		<select id="states-multi-select" name="states-multi-select" multiple>
+			<option value=""></option>
+		</select>
+
+		<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="chosen.jquery.js"></script>
+		<script type="text/javascript" src="chosen.ajaxaddition.jquery.js"></script>
+		<script>
+           $('#states-select').ajaxChosen({
+                   dataType: 'json',
+                   type: 'POST',
+                   url:'search.php'
+           },{
+                   loadingImg: 'loading.gif'
+           });
+           $('#states-multi-select').ajaxChosen({
+                   dataType: 'json',
+                   type: 'POST',
+                   url:'search.php'
+           },{
+                   loadingImg: 'loading.gif'
+           });
+    </script>
+	</body>
+</html>

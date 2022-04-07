@@ -1,0 +1,7 @@
+.idea
+vendor/*
+composer.lock
+app/config/env/.env
+app/logs/*
+cache/*
+public/multimedia/*

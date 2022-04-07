@@ -1,0 +1,688 @@
+/* Main */
+@import url('bootstrap/css/bootstrap.min.css');
+@import url('bootstrap/css/bootstrap-theme.min.css');
+@import url('font-awesome-4.6.1/css/font-awesome.min.css');
+@font-face{
+    font-family:app-bold-font;
+    src:url(bootstrap/fonts/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family:content-font;
+    src:url(bootstrap/fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family:roboto-medium;
+    src:url(bootstrap/fonts/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family:opensans-font;
+    src:url(bootstrap/fonts/OpenSans-CondLight.ttf);
+}
+@font-face{
+    font-family:opensansb-font;
+    src:url(bootstrap/fonts/OpenSans-Bold.ttf);
+}
+@font-face{
+    font-family:tes-font;
+    src:url(bootstrap/fonts/mailrays.ttf);
+}
+@font-face{
+    font-family:opensansreg-font;
+    src:url(bootstrap/fonts/OpenSans-Regular.ttf);
+}
+html,body{
+    font-family:opensansreg-font;
+}
+
+.no-margin{
+    margin: 0;
+}
+.no-margin-top{
+    margin-top: 0;
+}
+.no-margin-bot{
+    margin-bottom: 0;
+}
+.lh-20{
+    line-height: 20px;
+}
+.lh-23{
+    line-height: 23px;
+}
+.lh-25{
+    line-height: 25px;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+/* font size */
+.ft-bold{
+    font-weight: bold;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-11{
+    font-size: 11px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-17{
+    font-size: 17px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-19{
+    font-size: 19px;
+}
+.fs-20{
+    font-size: 20px;
+}
+
+/* border radius */
+.radius-0{
+    border-radius: 0;
+}
+.radius-1{
+    border-radius: 1px;
+}
+.radius-2{
+    border-radius: 2px;
+}
+.radius-3{
+    border-radius: 3px;
+}
+.radius-4{
+    border-radius: 4px;
+}
+.radius-5{
+    border-radius: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer-container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.footer-container .text-muted {
+  margin: 20px 0;
+}
+
+/* Form */
+label{
+    font-weight: normal;
+}
+.form-control{
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.87);
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 0 transparent inset;
+    -webkit-transition: color .1s ease,border-color .1s ease;
+    transition: color .1s ease,border-color .1s ease;
+}
+.form-control:focus{
+    /*border-color:rgba(34,36,38,.35);*/
+    border-color:#ddd;
+    background:#fff;
+    color:rgba(0,0,0,.8);
+    box-shadow:none;
+    
+}
+.form-control-info:focus{
+    border-color:#bce8f1;
+}
+.form-control-success:focus{
+    border-color:#d6e9c6;
+}
+.form-control-warning:focus{
+    border-color:#faebcc;
+}
+.item{
+    font-size: 20px;
+}
+
+/* class backgound */
+.bg-success {
+    background: #70BA63;
+}
+.bg-info {
+    background: #4DC5F9;
+}
+.bg-danger {
+    background: #E9573F;
+}
+.bg-warning {
+    background: #FEB252;
+}
+.bg-tile{
+    background: #00b5ad;
+}
+
+/* Navbar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand>img {
+  padding: 7px 10px;
+  width: 64px;
+}
+
+/*---------------*/
+/* Common style */
+figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	max-height: 360px;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+}
+
+figure img {
+	position: relative;
+	display: block;
+    width: 100%;
+    height: 200px;
+	min-height: 100%;
+	max-width: 100%;
+}
+
+figure figcaption {
+	padding: 2em;
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
+}
+
+figure figcaption,
+.figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+figure h2 span {
+	font-weight: 800;
+}
+
+figure h2,
+figure p {
+	margin: 0;
+}
+
+figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/***** Zoe *****/
+/*---------------*/
+
+figure.effect-zoe figcaption {
+	top: auto;
+	bottom: 0;
+	padding: 1em;
+	max-height: 100%;
+	background: #fff;
+	color: #3c4a50;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-zoe h2 {
+	float: left;
+}
+
+figure.effect-zoe p.icon-links a {
+	float: right;
+	color: #3c4a50;
+	font-size: 1.4em;
+}
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+	color: #252d31;
+}
+
+figure.effect-zoe p.description {
+	position: absolute;
+	bottom: 8em;
+	padding: 2em;
+	color: #fff;
+	text-transform: none;
+	font-size: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+}
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+
+figure.effect-zoe p.icon-links a span::before {
+	display: inline-block;
+	padding: 8px 10px;
+	font-family: 'feathericons';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye::before {
+	content: '\e000';
+}
+
+.icon-paper-clip::before {
+	content: '\e001';
+}
+
+.icon-heart::before {
+	content: '\e024';
+}
+
+figure.effect-zoe h2 {
+	display: inline-block;
+}
+
+figure.effect-zoe:hover p.description {
+	opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h2 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+/* pagination */
+.pagination > li.disabled {
+  opacity: .4;
+}
+
+.pagination.pagination-no-border > li > a,
+.pagination.pagination-no-border > li > span {
+  border: 0;
+}
+
+.pagination > li > a,
+.pagination > li > span,
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: 50%;
+  margin: 0 2px;
+  color: #797979;
+}
+
+.pagination > li.active > a,
+.pagination > li.active > span,
+.pagination > li.active > a:hover,
+.pagination > li.active > span:hover,
+.pagination > li.active > a:focus,
+.pagination > li.active > span:focus {
+  background-color: #00b5ad !important;
+  border: 0;
+  color: #FFFFFF;
+  padding: 7px 13px;
+}
+
+.nav-pills-blue > li.active > a,
+.nav-pills-blue > li.active > a:hover,
+.nav-pills-blue > li.active > a:focus {
+  background-color: #447DF7;
+}
+
+.pagination-blue > li.active a,
+.pagination-blue > li.active a:hover,
+.pagination-blue > li.active a:focus,
+.pagination-blue > li.active span,
+.pagination-blue > li.active span:hover,
+.pagination-blue > li.active span:focus {
+  background-color: #447DF7;
+}
+
+.nav-pills-azure > li.active > a,
+.nav-pills-azure > li.active > a:hover,
+.nav-pills-azure > li.active > a:focus {
+  background-color: #23CCEF;
+}
+
+.pagination-azure > li.active a,
+.pagination-azure > li.active a:hover,
+.pagination-azure > li.active a:focus,
+.pagination-azure > li.active span,
+.pagination-azure > li.active span:hover,
+.pagination-azure > li.active span:focus {
+  background-color: #23CCEF;
+}
+
+.nav-pills-green > li.active > a,
+.nav-pills-green > li.active > a:hover,
+.nav-pills-green > li.active > a:focus {
+  background-color: #87CB16;
+}
+
+.pagination-green > li.active a,
+.pagination-green > li.active a:hover,
+.pagination-green > li.active a:focus,
+.pagination-green > li.active span,
+.pagination-green > li.active span:hover,
+.pagination-green > li.active span:focus {
+  background-color: #87CB16;
+}
+
+.nav-pills-orange > li.active > a,
+.nav-pills-orange > li.active > a:hover,
+.nav-pills-orange > li.active > a:focus {
+  background-color: #FFA534;
+}
+
+.pagination-orange > li.active a,
+.pagination-orange > li.active a:hover,
+.pagination-orange > li.active a:focus,
+.pagination-orange > li.active span,
+.pagination-orange > li.active span:hover,
+.pagination-orange > li.active span:focus {
+  background-color: #FFA534;
+}
+
+.nav-pills-red > li.active > a,
+.nav-pills-red > li.active > a:hover,
+.nav-pills-red > li.active > a:focus {
+  background-color: #FB404B;
+}
+
+.pagination-red > li.active a,
+.pagination-red > li.active a:hover,
+.pagination-red > li.active a:focus,
+.pagination-red > li.active span,
+.pagination-red > li.active span:hover,
+.pagination-red > li.active span:focus {
+  background-color: #FB404B;
+}
+
+.heading-harga{
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+    color: gold;
+    text-shadow: 1px 1px 5px black;
+    font-weight: bolder;
+}
+
+/* Mega dropdown menu*/
+.mega-dropdown {
+  position: static !important;
+}
+
+.mega-dropdown-menu {
+  
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.mega-dropdown-menu:before {
+  content: "";
+  
+  position: absolute;
+  top: -15px;
+  left: 285px;
+  z-index: 10;
+}
+
+.mega-dropdown-menu:after {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 283px;
+  z-index: 8;
+}
+
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #999;
+  white-space: normal;
+}
+
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+  color: #444;
+  background-color: #f5f5f5;
+}
+
+.mega-dropdown-menu .dropdown-header {
+  color: #428bca;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mega-dropdown-menu form {
+  margin: 3px 20px;
+}
+
+.mega-dropdown-menu .form-group {
+  margin-bottom: 3px;
+}
+
+/* line through*/
+.line-through {
+    border-top: 4px double #ddd;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+.line-through p {
+    position: absolute;
+    text-align: center;
+    top: -13px;
+    width: 100%;
+}
+.line-through span {
+    background: #fff;
+    padding: 0 10px;
+    color: whitesmoke;
+    font-weight: bold; 
+    text-shadow: 1px 1px 3px black;
+    text-transform: uppercase;
+}
+
+/* list kategori home*/
+.allcat{
+    float: left;
+}
+.allcat li{
+    line-height: 22px
+}
+.allcat li a:hover{
+    background: #eee;
+}
+.allcat a {
+    width: 296px;
+    height: 40px;
+    border: 1px solid #f7f7f7;
+    border-left: 3px solid #ecebeb;
+    padding: 5px 5px 20px;
+    display: block;
+    background: #fff;
+    color: #909090;
+    text-decoration: none;
+    font-size: 13px;
+}
+.allcat a>i {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 2px;
+    color: green;
+}
+/* icon sprit ecommerce*/
+.sprite-cat {
+    background: url(https://ecs7.tokopedia.net/img/newtkpd/cat-sprite.png) no-repeat;
+    background-size: 166px 286px;
+    width: 26px;
+    height: 22px;
+    display: inline-block;
+}
+.sprite-product-fashion {
+    background-position: -39px -104px;
+}
+.sprite-product-clothing {
+    background-position: -104px -41px;
+}
+.sprite-product-beauty {
+    background-position: -38px -135px;
+}
+.sprite-product-health {
+    background-position: -7px -103px;
+}
+.sprite-product-home-appliances {
+    background-position: -136px -40px;
+}
+.sprite-product-kitchen-dining {
+    background-position: -7px -40px;
+}
+.sprite-product-baby {
+    background-position: -70px -7px;
+}
+.sprite-product-phone-tablet {
+    background-position: -38px -72px;
+}
+.sprite-product-notebook {
+    background-position: -105px -73px;
+}
+.sprite-product-pc {
+    background-position: -105px -104px;
+}
+.sprite-product-electronics {
+    background-position: -6px -70px;
+}
+.sprite-product-photography {
+    background-position: -70px -42px;
+}
+.sprite-product-automotive {
+    background-position: -136px -7px;
+}
+.sprite-product-sports {
+    background-position: -38px -8px;
+}
+.sprite-product-office-stationery {
+    background-position: -73px -104px;
+}
+.sprite-product-gift {
+    background-position: -137px -103px;
+}
+.sprite-product-toys-hobbies {
+    background-position: -6px -139px;
+}
+.sprite-product-food-beverages {
+    background-position: -137px -70px;
+}
+.sprite-product-books {
+    background-position: -39px -41px;
+}
+.sprite-product-softwares {
+    background-position: -106px -7px;
+}
+.sprite-product-movies-games-music {
+    background-position: -71px -73px;
+}

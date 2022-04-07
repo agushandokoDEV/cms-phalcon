@@ -1,0 +1,31 @@
+{
+  "name": "jquery-backdetect",
+  "version": "1.0.3",
+  "description": "backDetect is a jQuery plugin that fires a callback function when a user hits the browser's back button.",
+  "main": "jquery.backDetect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianrogren/jquery-backDetect.git"
+  },
+  "keywords": [
+    "backdetect",
+    "back-detect",
+    "jquery",
+    "jquery-plugin"
+  ],
+  "author": "Ian Rogren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianrogren/jquery-backDetect/issues"
+  },
+  "homepage": "https://github.com/ianrogren/jquery-backDetect#readme",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^3.2.0"
+  }
+}

@@ -1,0 +1,12 @@
+#loader-body { height: 100%; width: 100%; }
+#loader-body {
+    position    : fixed;
+    z-index     : 99; /* or higher if necessary */
+    top         : 0;
+    left        : 0;
+    overflow    : hidden;
+    text-indent : 100%;
+    font-size   : 0;
+    opacity     : 0.6;
+    background  : #E0E0E0  url('../img/loading.gif') center no-repeat;
+}

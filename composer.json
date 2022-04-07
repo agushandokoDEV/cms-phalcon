@@ -1,0 +1,17 @@
+{
+    "name": "agushandoko/phalconcms",
+    "description": "Phalcon CMS",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^2.4",
+        "magnxpyr/phalcon-datatables": "^1.2",
+        "zircote/swagger-php": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "agus handoko",
+            "email": "agus.prio.handoko@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

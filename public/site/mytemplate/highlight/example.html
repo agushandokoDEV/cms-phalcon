@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>jQuery highlight.js Plugin Demo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	body { background-color: #fafafa; }
+		.matche-cnt{
+			margin-left: 10px;
+			font-size: 16px;
+			color: #999;
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/text/jQuery-Plugin-To-Highlight-Searched-Text-In-A-Certain-Container-highlight-js/">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="ui container" style="margin-top:150px;">
+	<h1 class="ui dividing header">jQuery highlight.js Plugin Demo</h1>
+	<h2 class="ui header">Code</h2>
+	<div class="ui segment" style="background:#f7f7f9;box-shadow:none;">
+		<pre id="code" style="margin:0;">$(<span class="s1">selector</span>).highlight('<span id="keyword" class="kc">the</span>', {
+    <span class="kc">color</span>: <span class="s">'black'</span>,
+    <span class="kc">background</span>: <span class="s">'yellow'</span>,
+    <span class="kc">ignoreCase</span>: <span class="s" id="ignoreCase">true</span>,
+    <span class="kc">wholeWord</span>: <span class="s" id="wholeWord">false</span>,
+    <span class="kc">bold</span>: <span class="s" id="bold">false</span>
+});</pre>
+	</div>
+	<form class="ui form">
+		<div class="fields">
+			<div class="field">
+				<label for="word">Keyword</label>
+				<input type="text" id="word" value="Lorem" placeholder="search word">
+			</div>
+			<div class="field" style="padding-top:30px;">
+				<div class="ui checked checkbox">
+					<input type="checkbox" id="toggleIgnoreCase" tabindex="0" class="hidden" checked="">
+					<label>Ignore case</label>
+				</div>
+			</div>
+			<div class="field" style="padding-top:30px;">
+				<div class="ui checkbox">
+					<input type="checkbox" id="toggleWholeWord" tabindex="0" class="hidden">
+					<label>Whole word</label>
+				</div>
+			</div>
+			<div class="field" style="padding-top:30px;">
+				<div class="ui checkbox">
+					<input type="checkbox" id="toggleBold" tabindex="0" class="hidden">
+					<label>Bold</label>
+				</div>
+			</div>
+		</div>
+		<div class="fields">
+			<div class="field" style="width:90px;">
+				<label for="color">Color</label>
+				<input type="text" placeholder="color" value="black" id="color">
+			</div>
+			<div class="field" style="width:90px;">
+				<label for="background">Background</label>
+				<input type="text" placeholder="color" value="yellow" id="background">
+			</div>
+		</div>
+	</form>
+</div>
+<div class="ui container" style="margin:35px 0;">
+	<div class="ui divider"></div>
+	<h2 class="ui header">Result<span class="matche-cnt"><span id="matcheCnt">0</span> matches</span></h2>
+	<div class="ui raised segment" id="textbox">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque luctus semper. Suspendisse massa mi, scelerisque et consectetur id, faucibus congue sapien. Mauris eu interdum tellus. Quisque et varius nisi. Aenean vel neque ut eros maximus blandit ut ut sapien. Duis sit amet pellentesque neque. Fusce sem enim, volutpat pulvinar erat eget, porttitor rutrum est. Pellentesque fringilla dictum mi vel pretium. Morbi gravida placerat semper. Pellentesque at risus nec felis pulvinar iaculis sit amet vitae mauris. Sed vitae sollicitudin mi. Nulla rhoncus tempus tortor, ut imperdiet est semper et.</p>
+		<p>Cras lectus augue, accumsan nec sem non, gravida fermentum est. Cras quis ipsum non mauris condimentum posuere. Aliquam et auctor eros. Quisque rhoncus rutrum nisl, eget mattis odio pretium ac. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vel quam mi. In elementum quis lacus nec placerat. Sed tincidunt arcu bibendum lacus ultricies, vel ullamcorper lectus finibus. Phasellus luctus elit sapien, a sagittis erat ultricies sit amet. Sed ante diam, lacinia eget aliquet lacinia, porta eget justo. Sed sit amet nunc finibus, placerat augue a, finibus purus. Proin purus est, tincidunt vitae dui et, suscipit venenatis lectus. Nullam eget ligula pharetra, suscipit odio vitae, vehicula ex.</p>
+		<p>Nulla malesuada aliquet nisi, ac dapibus tortor aliquet a. Vestibulum dapibus purus velit. Proin non sapien vel tortor malesuada fringilla. Donec eu sollicitudin purus, ut ultricies justo. Nullam pretium nisi ante, ac tristique nisl egestas eu. Aliquam volutpat tempor iaculis. Praesent vitae nibh eget dui luctus sollicitudin vel et dolor. Mauris rutrum sagittis leo vel consequat. Nullam tempor risus sem, vel mollis orci ultrices a. Nam sodales feugiat velit, a consectetur leo dignissim id.</p>
+		<p>Mauris vestibulum laoreet lectus non venenatis. Aliquam rutrum eros neque, sit amet consectetur ligula semper ut. Curabitur vehicula viverra rhoncus. Mauris ut nulla velit. Ut ullamcorper magna sit amet placerat scelerisque. Praesent maximus, nisl fermentum pharetra sagittis, ante urna ultricies nisi, quis condimentum lacus mi a erat. Suspendisse sollicitudin, ipsum in ultrices consectetur, mi lacus pretium augue, et porttitor risus mauris vel nunc. Sed luctus in leo a mollis. Donec fringilla pellentesque nisi, at faucibus mi. Integer sed lacus et arcu egestas iaculis at at metus. Mauris in arcu et libero viverra posuere vel vitae est. Nam vitae est et dolor aliquam placerat quis quis sapien.</p>
+	</div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+<script type="text/javascript" src="js/jQuery.highlight.js"></script>
+<script>
+	var searchCnt = 0;
+
+	var option = {
+		color: "black",
+		background: "yellow",
+		bold: false,
+		class: "high",
+		ignoreCase: true,
+		wholeWord: false
+	}
+	$(function(){
+
+		$('.ui.checkbox').checkbox();
+
+		var originalContent = $("#textbox").html();
+		searchCnt = $("#textbox").highlight($("#word").val(), option);
+		$("#matcheCnt").text(searchCnt);
+
+		$("#word").keyup(function(){
+			$("#textbox").html(originalContent);
+			$("#keyword").html(this.value);
+			if(this.value == "") return;
+			searchCnt = $("#textbox").highlight(this.value, option);
+			$("#matcheCnt").text(searchCnt);
+		});
+
+		$("#toggleIgnoreCase").change(function(){
+			$("#textbox").html(originalContent);
+			if($(this).prop("checked")){
+				option.ignoreCase = true;
+				$("#ignoreCase").html("true");
+			}else{
+				option.ignoreCase = false;
+				$("#ignoreCase").html("false");
+			}
+			searchCnt = $("#textbox").highlight($("#word").val(), option);
+			$("#matcheCnt").text(searchCnt);
+		});
+
+		$("#toggleWholeWord").change(function(){
+			$("#textbox").html(originalContent);
+			if($(this).prop("checked")){
+				option.wholeWord = true;
+				$("#wholeWord").html("true");
+			}else{
+				option.wholeWord = false;
+				$("#wholeWord").html("false");
+			}
+			searchCnt = $("#textbox").highlight($("#word").val(), option);
+			$("#matcheCnt").text(searchCnt);
+		});
+
+		$("#toggleBold").change(function(){
+			$("#textbox").html(originalContent);
+			if($(this).prop("checked")){
+				option.bold = true;
+				$("#bold").html("true");
+			}else{
+				option.bold = false;
+				$("#bold").html("false");
+			}
+			searchCnt = $("#textbox").highlight($("#word").val(), option);
+		});
+
+		$("#color").keyup(function(){
+			$("#textbox").html(originalContent);
+			option.color = this.value;
+			searchCnt = $("#textbox").highlight($("#word").val(), option);
+			$("#matcheCnt").text(searchCnt);
+		});
+
+		$("#background").keyup(function(){
+			$("#textbox").html(originalContent);
+			option.background = this.value;
+			searchCnt = $("#textbox").highlight($("#word").val(), option);
+			$("#matcheCnt").text(searchCnt);
+		});
+	});
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
